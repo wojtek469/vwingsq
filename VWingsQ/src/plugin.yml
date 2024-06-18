@@ -1,0 +1,6 @@
+name: VWingsQ
+main: pl.vojteq.wings.Main
+version: 0.1
+api-version: 1.21
+commands:
+    specialwings:
