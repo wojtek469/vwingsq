@@ -32,7 +32,7 @@ public class WingListener implements Listener{
 	
 	
 	private void disableFlightIfNecessary(Player p) {
-		if (p.getAllowFlight() && !p.hasPermission("fly.bypass")) {
+		if (p.getAllowFlight() && !p.hasPermission("specialwings.bypass")) {
 			p.setAllowFlight(false);
 			p.setFlying(false);
 		}
