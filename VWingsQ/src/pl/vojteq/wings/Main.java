@@ -13,8 +13,8 @@ public class Main extends JavaPlugin{
     public void onEnable() {
     	instance = this;
 		PluginManager pm = Bukkit.getPluginManager();
-		pm.registerEvents(new Listeners(), this);
-		new specialwingsCMD(this);
+		pm.registerEvents(new WingListener(), this);
+		new WingCMD(this);
     	getLogger().warning("[VWingsQ] Loaded.");
     	
     }
