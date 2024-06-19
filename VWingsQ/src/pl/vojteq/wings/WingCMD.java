@@ -13,9 +13,9 @@ import org.bukkit.inventory.meta.LeatherArmorMeta;
 import java.util.ArrayList;
 import java.util.List;
 
-public class specialwingsCMD implements CommandExecutor {
+public class WingCMD implements CommandExecutor {
 
-    public specialwingsCMD(Main M) {
+    public WingCMD(Main M) {
         M.getCommand("specialwings").setExecutor(this);
     }
 

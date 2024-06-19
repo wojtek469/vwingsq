@@ -2,7 +2,6 @@ package pl.vojteq.wings;
 
 import org.bukkit.Color;
 import org.bukkit.Material;
-import org.bukkit.Particle;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -10,7 +9,7 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.LeatherArmorMeta;
 
-public class Listeners implements Listener{
+public class WingListener implements Listener{	   
 	
 	@EventHandler
 	public void onPlayerMove(PlayerMoveEvent e) {
@@ -22,7 +21,7 @@ public class Listeners implements Listener{
 			if (meta != null && meta.getColor().equals(Color.PURPLE)) {
 				p.setAllowFlight(true);
 				p.setFlying(true);
-				p.spawnParticle(Particle.BUBBLE, p.getLocation(), 3);
+				//startWingEffect(p);
 			} else {
 				disableFlightIfNecessary(p);
 			}
@@ -38,5 +37,4 @@ public class Listeners implements Listener{
 			p.setFlying(false);
 		}
 	}
-
 }
